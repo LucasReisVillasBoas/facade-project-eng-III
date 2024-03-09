@@ -6,7 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   const corsOptions: CorsOptions = {
-    origin: 'http://localhost:3001', // Permitir apenas solicitações da origem http://localhost:3001
+    origin: '*', // Permitir apenas solicitações da origem http://localhost:3001
     credentials: true, // Permitir credenciais (cookies, cabeçalhos de autenticação)
   };
 
